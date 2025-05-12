@@ -112,8 +112,11 @@ function code {
     fi
 }
 
-# Clash
-alias proxy='export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890'
+# Shortcut
+alias proxyon='export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890'
+alias proxyoff='unset http_proxy https_proxy all_proxy'
+alias ..='cd ..'
+alias c='clear'
 
 # Activate the syntax highlighting
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
