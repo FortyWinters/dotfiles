@@ -117,6 +117,7 @@ alias proxyon='export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.
 alias proxyoff='unset http_proxy https_proxy all_proxy'
 alias ..='cd ..'
 alias c='clear'
+alias vim='nvim'
 
 # Activate the syntax highlighting
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -126,4 +127,7 @@ source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Starship
 eval "$(starship init zsh)"
+
+# Autojump
+[ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
 
